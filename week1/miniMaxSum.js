@@ -40,6 +40,21 @@ function miniMaxSum(arr) {
 
   console.log(min, max);
 }
+// function miniMaxSum(arr) {
+//   let mini = 0
+//   let max = 0
+//   const smallOrder = arr.sort(function(a,b) {
+//       return a-b
+//   })
+//   for(let i = 0; i < 4; i++) {
+//       mini += smallOrder[i]
+//   }
+//   for(let i =1; i < arr.length; i++){
+//       max += smallOrder[i]
+//   }
+//   console.log(mini ,max)
+
+// }
 
 function main() {
   const arr = readLine()

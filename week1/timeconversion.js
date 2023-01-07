@@ -42,6 +42,18 @@ function timeConversion(s) {
   }
 }
 
+// function timeConversion(s) {
+//   if(s.includes('PM')) {
+//       if(s.substring(0,2) == 12){
+//           return s.substring(0,8)
+//       }else return Number(s.substring(0,2))+ 12 + s.substring(2,8)
+//   }if(s.includes('AM')) {
+//       if(s.substring(0,2) == 12){
+//           return '00' + s.substring(2,8)
+//       }else return s.substring(0,8)
+//   }
+// }
+
 function main() {
   const ws = fs.createWriteStream(process.env.OUTPUT_PATH);
 

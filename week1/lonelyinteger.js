@@ -33,6 +33,22 @@ function lonelyinteger(a) {
   return a.filter((num) => a.indexOf(num) == a.lastIndexOf(num));
 }
 
+// function lonelyinteger(a) {
+//   const itemCount = {}
+//   for(let i = 0; i < a.length;i++) {
+//       if(itemCount[a[i]]){
+//          itemCount[a[i]] = itemCount[a[i]] + 1
+//       } else {
+//           itemCount[a[i]] = 1
+//       }
+//   }
+//   for(const key in itemCount) {
+//       if(itemCount[key] == 1) {
+//           return key
+//       }
+//   }
+// }
+
 function main() {
   const ws = fs.createWriteStream(process.env.OUTPUT_PATH);
 
